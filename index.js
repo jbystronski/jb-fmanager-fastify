@@ -70,7 +70,7 @@ module.exports = fmRoutes = (
         uploadLimit
       );
 
-      return rep.code(200).serialize(pd);
+      rep.code(200).serialize(pd);
     } catch (error) {
       app.log.error(error);
 
