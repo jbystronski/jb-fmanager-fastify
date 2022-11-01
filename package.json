@@ -9,10 +9,8 @@
   },
   "author": "Jakub Bystroński",
   "license": "ISC",
-  "dependencies": {
-    "@jb_fmanager/node-utils": "latest"
-  },
   "peerDependencies": {
-    "fastify": "^4.9.2"
+    "fastify": "^4.9.2",
+    "@jb_fmanager/node-utils": "^1.0.0"
   }
 }
