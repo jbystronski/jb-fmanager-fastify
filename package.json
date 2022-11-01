@@ -1,6 +1,6 @@
 {
   "name": "@jb_fmanager/fastify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "jb file manager endpoint setup for fastify",
   "repository": "jbystronski/jb-fmanager-fastify",
   "main": "index.js",
