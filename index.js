@@ -13,7 +13,8 @@ module.exports = fmRoutes = (
 
   const wrapAsync = async (fn, rep, ...args) => {
     try {
-      return await fn(...args);
+      const pd = await fn(...args);
+      return rep.code(200).send(pd || {});
     } catch (error) {
       app.log.error(error);
 
@@ -70,7 +71,7 @@ module.exports = fmRoutes = (
         uploadLimit
       );
 
-      rep.code(200).serialize(pd);
+      return rep.code(200).serialize(pd);
     } catch (error) {
       app.log.error(error);
 
