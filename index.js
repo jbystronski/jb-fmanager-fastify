@@ -1,9 +1,6 @@
 const fm = require("@jb_fmanager/node-utils");
 
-module.exports = fmRoutes = (
-  app,
-  { prefix = "/", errorHandler, maxUploadSize }
-) => {
+module.exports = (app, { prefix = "/", errorHandler, maxUploadSize }) => {
   app.addContentTypeParser(
     "multipart/form-data",
     function (request, payload, done) {
