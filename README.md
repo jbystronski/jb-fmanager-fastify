@@ -1,7 +1,7 @@
-<p style="font-size:14px;"><a href=https://github.com/jbystronski/jb-fmanager-react">@jb_fmanager/react</a> setup for fastify</p>
-<h5>Installation</h5>
+<p><a href="https://github.com/jbystronski/jb-fmanager-react">@jb_fmanager/react</a> setup for fastify</p>
+<h4>Installation</h4>
 
-<p style="font-size:14px;">Include the routes and the utility package <a href="https://github.com/jbystronski/jb-fmanager-node-utils">@jb_fmanager/node-utils</a></p>
+<p>Include the routes and the utility package <a href="https://github.com/jbystronski/jb-fmanager-node-utils">@jb_fmanager/node-utils</a></p>
 
 ```bash
 
@@ -11,14 +11,13 @@ yarn add @jb_fmanager/fastify @jb_fmanager/node-utils
 
 ```
 
-<h5>Options</h5>
+<h4>Options</h4>
 
-<p style="font-size:14px; font-weight: bold">prefix</p>
-<p style="font-size:14px;">Must match the namespace provided to the manager, default is "api/fm".</p>
-<p style="font-size:14px; font-weight: bold">maxUploadSize</p>
-<p style="font-size:14px;">If you want to override the value provided to the manager. Accepts bytes, ie 5242880 (5mb).</p>
+<p style="font-weight: bold;">prefix</p>
+<p>Must match the namespace provided to the manager, default is "api/fm".</p>
+<p style="font-weight: bold;">maxUploadSize</p><p>If you want to override the value provided to the manager. Accepts bytes, ie 5242880 (5mb).</p>
 
-<h5>Example use</h5>
+<h4>Example use</h5>
 
 ```js
 const fastify = require("fastify")({ logger: true });
