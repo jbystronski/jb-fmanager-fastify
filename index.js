@@ -1,6 +1,9 @@
 const fm = require("@jb_fmanager/node-utils");
 
-module.exports = (app, { prefix = "/", errorHandler, maxUploadSize }) => {
+module.exports = (
+  app,
+  { prefix = "/", errorHandler, root = "public", maxUploadSize }
+) => {
   app.addContentTypeParser(
     "multipart/form-data",
     function (request, payload, done) {
@@ -25,7 +28,7 @@ module.exports = (app, { prefix = "/", errorHandler, maxUploadSize }) => {
 
   app.get(
     prefix + "/map",
-    async ({ query }, rep) => await wrapAsync(fm.map, rep, query.path)
+    async ({ query }, rep) => await wrapAsync(fm.map, rep, root)
   );
 
   app.get(
